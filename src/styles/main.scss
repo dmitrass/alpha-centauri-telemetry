@@ -1,0 +1,30 @@
+.navbar-sorting {
+  @media only screen and (min-width: 375px) {
+    flex-direction: column;
+  }
+  @media only screen and (min-width: 992px) {
+    flex-direction: row;
+  }
+}
+
+span.navbar-sorting {
+  &__heading {
+    justify-content: center;
+    font-weight: bold;
+  }
+}
+
+.navbar-filtering {
+  &__heading {
+    font-weight: bold;
+  }
+}
+
+.filter, .sorter {
+  @media only screen and (min-width: 375px) {
+    margin: 1rem auto;
+  }
+  @media only screen and (min-width: 992px) {
+    margin: auto;
+  }
+}

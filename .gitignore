@@ -1,0 +1,8 @@
+/node_modules
+/dist
+/public
+/server/public
+.idea
+.DS_Store
+yarn.lock
+package-lock.json

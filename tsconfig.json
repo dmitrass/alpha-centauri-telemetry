@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",    // path to output directory
+    "sourceMap": true,      // allow sourcemap support (for debugging)
+    "noImplicitAny": false,  // strict type checking
+    "module": "commonjs",   // specify module code generation
+    "target": "es5",        // specify ECMAScript target version
+    "jsx": "react",          // use typescript to transpile jsx to js
+    "removeComments": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
