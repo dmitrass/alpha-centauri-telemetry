@@ -62,14 +62,11 @@ const Station = (props: StationProps) => {
     }
 
 
-    const normalizedChartData = (data: any) => {
-        let chartData: { temperature: any; index: any; }[] = []
-
-        data.map((item: any, i: any) => {
-            chartData.push(Object.assign({}, {temperature: item, index: i}))
-        })
-
-        return chartData
+    const normalizedChartData = (data: Array<number>) => {
+        return data.reduce((acc: Array<{temperature: number, index: number}>, curr: number, i: number) => {
+            acc[i] = {temperature: curr, index: i}
+            return acc
+        }, []);
     }
 
     const renderEnabledBadge = () => {

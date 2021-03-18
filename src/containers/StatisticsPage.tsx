@@ -143,10 +143,6 @@ class StatisticsPage extends Component<{}, StatisticsPageState> {
 
     }
 
-    componentDidUpdate(): void {
-        // @ts-ignore
-        console.log(this.props.aggregatedStations);
-    }
 
     shouldComponentUpdate(nextProps: Readonly<{}>, nextState: StatisticsPageState, nextContext: any): boolean {
         return true
